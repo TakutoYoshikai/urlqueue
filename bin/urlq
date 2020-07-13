@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd `dirname $0`/..
+if [ "$1" = "" ]; then
+  url=`head -n 1 queue.lst`
+  if [ "$url" = "" ]; then
+    exit
+  fi
+  firefox $url
+  sed -i -e '1d' queue.lst
+  exit
+fi
+echo "$1" >> queue.lst
