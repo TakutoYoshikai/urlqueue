@@ -6,7 +6,7 @@ if [ "$1" = "" ]; then
   if [ "$url" = "" ]; then
     exit
   fi
-  firefox $url
+  firefox $url > /dev/null 2>&1 &
   sed -i -e '1d' queue.lst
   exit
 fi
