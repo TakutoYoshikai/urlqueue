@@ -1,13 +1,14 @@
 # URL Queue
-A command line bookmark system
-## How to use
+urlqueue is a bookmark program on terminal.
 
-### register URL
+### Usage
+
+**register URL**
 ```bash
 urlq https://example.com 
 ```
 
-### open URL
+**open URL**
 ```bash
 urlq
 ```
